@@ -1,9 +1,15 @@
 <script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
+  import { storeToRefs } from 'pinia'
+  import {usePokemonStore} from '@/stores/pokemon'
+  const { allPokemon } = storeToRefs( usePokemonStore() );
+
 </script>
 
 <template>
+  <header>header</header>
   <main>
-    <TheWelcome />
+    
+    <li v-for="(pokenon, index) in allPokemon" :key='index'>{{index}} {{pokenon.name}}</li>
+        
   </main>
 </template>
