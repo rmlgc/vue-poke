@@ -1,0 +1,1 @@
+import{o as s,c as _,a as c}from"./index.c006cf6c.js";var r=(e,t)=>{const o=e.__vccOpts||e;for(const[a,n]of t)o[a]=n;return o};const i={},h={class:"about"},l=c("h1",null,"Whos That Pokemon",-1),d=[l];function m(e,t){return s(),_("div",h,d)}var v=r(i,[["render",m]]);export{v as default};
